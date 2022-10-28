@@ -1,0 +1,333 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+.link {
+    background-color: #ff9bdb;
+    padding: 20px 80px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.header {
+    padding-top: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+.header a {
+    padding: 10px 50px;
+    background-color: white;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%),
+        0 2px 4px 0 rgb(0 0 0 / 12%);
+    border-radius: 30px;
+    font-weight: 700;
+    color: #777;
+    font-size: 14px;
+    /* color: papayawhip; */
+
+}
+@media (max-width:375px) {
+    .header {
+        padding-top: 0px;
+    }
+    .header .container {
+        padding: 30px;
+
+    } 
+    .header img {
+        width: 100px;
+    }
+    .header a {
+        padding: 5px 20px;
+        font-size: 13px;   
+    }
+}
+.landing {
+    /* position: relative;
+    top: -590px; */
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    background-color: #edfbfe;
+    top: -89px;
+}
+.landing .container {
+    display: flex;
+    position: absolute;
+    top: 170px;
+}
+.landing .box {
+    flex-basis: 50%;
+    padding-top: 80px;
+}
+.landing .box h1 {
+    font-weight: 700;
+    font-size: 40px;
+    max-width: 450px;
+}
+.landing .box p {
+    line-height: 1.7;
+    max-width: 453px;
+    margin-bottom: 30px;
+}
+
+.landing .image {
+    flex-basis: 50%;
+}
+.landing .image img{
+    max-width: 100%;
+}
+
+@media (max-width: 375px) {
+    .landing {
+        background-image: url("../images/bg-hero-mobile.svg");
+        background-size: cover;
+        min-height: 720px;
+        text-align: center;
+    }
+    .landing .container {
+        top: 100px;
+    }
+    .landing .box {
+        padding-top: 0;
+    }
+    .landing .container {
+        padding: 0 30px;
+        flex-direction: column;
+    }
+    .landing .box h1 {
+        font-size: 27px;
+    }
+    .landing p {
+        padding-bottom: 20px;
+    }
+    .landing .box a {
+        padding: 10px 60px;
+    }
+    .landing .image {
+        padding-top: 60px;
+    }
+}
+
+.together, .conversation, .users {
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%),
+    0 2px 4px 0 rgb(0 0 0 / 12%);
+    padding: 50px 20px 50px 50px;
+    margin: 0 100px 50px;
+    border-radius: 10px;
+}
+.together .box, .conversation .box, .users .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.together .text, .conversation .text, .users .text {
+    flex-basis: 45%;
+    align-items: center;
+}
+.together p, .conversation p, .users p {
+    line-height: 1.7;
+    max-width: 453px;
+    margin-bottom: 30px;
+    color: #777;
+}
+.together .image, .conversation .image, .users .image{
+    flex-basis: 45%;
+}
+
+.together .image img, .conversation .image img, .users .image img {
+    max-width: 100%;
+}
+@media (max-width: 375px) {
+    .together, .conversation, .users  {
+        margin: 0 30px 25px;
+        text-align: center;
+        padding: 20px;
+    }
+    .together .box, .conversation .box, .users .box  {
+        flex-direction: column-reverse;
+    }
+    .conversation .box {
+        flex-direction: column;
+    }
+    .together .image, .conversation .image, .users .image{
+        padding-bottom: 20px;
+    }
+    .together p, .conversation p, .users p  {
+        font-size: 13px;
+    }
+
+}
+.community {
+    padding: 50px 0 80px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%),
+    0 2px 4px 0 rgb(0 0 0 / 12%);
+    margin: 100px 400px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -190px;
+}
+.community h2 {
+    margin-bottom: 40px;
+}
+@media (max-width: 375px) {
+    .community {
+        padding: 30px 20px 50px ;
+        margin: 30px;
+        position: relative;
+        top: 100px;
+    }
+    .community h2 {
+        font-size: 15px;
+    }
+    .community a {
+        padding: 15px 60px;
+        font-size: 13px ;
+    }
+}
+/* color: 00252e */
+.footer {
+    background-color: #00252e;
+    padding: 150px 0 50px;
+    color: #ccc;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 0px;
+}
+.footer .image img {
+    background-color: white;
+}
+.footer .box .content {
+    /* display: flex; */
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+.footer .box .phone {
+    padding-top: 20px;
+}
+.footer .box .image {
+    padding-bottom: 30px;
+
+}
+.footer .box .content img {
+    max-width: 100%;
+    width: 15px;
+}
+
+.footer .box .content p {
+    padding-left: 82px;
+    margin: -30px;
+    font-size: 15px;
+    max-width: 350px;
+}
+.footer .box .content span {
+    padding-left: 25px;
+}
+.footer .links-box {
+    display: flex;
+    margin-left: 50px;
+}   
+.footer .links-box .links {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    margin-top: 60px;
+}
+.footer .links-box .links a {
+    padding-bottom: 20px;
+    color: #ccc;
+    font-size: 13px;
+}
+
+.footer .links-box .links a:hover {
+    text-decoration: underline;
+}
+.footer .social {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer .social-links {
+    margin-top: 50px;
+}
+.footer .social-links a {
+    padding: 2px 4px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+.footer .social span {
+    font-size: 12px;
+    
+}
+@media (max-width: 375px) {
+    .footer {
+    }
+    .footer .container {
+        margin: 0 30px;
+        padding: 0;
+    }
+    .footer .links-box {
+        flex-direction: column;
+        margin: 20px 0 0;
+        padding: 0;
+    }
+    .footer .links-box .links {
+        margin: 0;
+        padding: 0;
+    }
+    .footer .social {
+        text-align: center;
+        padding: 0;
+    }
+    .footer .social-links {
+        padding-bottom: 20px;
+    }
+}
